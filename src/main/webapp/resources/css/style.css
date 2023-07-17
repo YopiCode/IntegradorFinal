@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 1em;
+    background: #1CAEC9;
+}
+
+header div{
+    gap: 1em;
+    display: flex;
+}
+
+header img{
+    height: 3em;
+}
+
+main{
+    position: relative;
+}
+
+.logins{
+    height: 90vh;
+}
+
+.img_fondos{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.img_fondos img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.img_fondos div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, .3);
+}
+
+.card_form{
+    position: relative;
+    height: 60%;
+    width: 40%;
+}
+
+.card_form_absolute{
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    border-radius: 1em;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.titulo_card{
+    height: 10%;
+    background: black;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    padding: 3em;
+    display: grid;
+    gap: 1.5em;
+}
+
+.form_label{
+    font-size: 1.2em;
+    font-weight: 550;
+    width: 10em;
+}
+
+.form_campos{
+    display: grid;
+    gap: 1.7em;
+}
+
+.form_cita{
+    width: 90%;
+    padding: 3em;
+}
+
+.form_cita form{
+    margin: auto;
+}
+
+
+
+.form_campos_registro{
+    display: flex;
+    gap: 1.7em;
+    margin: 2em;
+}
+
+.form_input{
+    font-weight: 500;
+    font-size: 14px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    outline: none;
+}
+
+.form_input:focus {
+    border-bottom: 1px solid #6941c6;
+    -webkit-transition: 0.1s;
+    transition: 0.5s;
+}
+
+.btn_login {
+    margin-top: 1em;
+    border: 3px solid #315cfd;
+    border-radius: 1em;
+    padding: .2em 2em;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+}
+
+.btn_login:hover {
+    background: #315cfd;
+    color: white;
+    font-size: 1.5em;
+}
+
+.btn_submit {
+    margin-top: 1em;
+    border: 3px solid #16a2bc;
+    border-radius: 1em;
+    padding: .2em 1em;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+}
+
+.btn_submit:hover {
+    background: #16a2bc;
+    color: white;
+}
+
+.btn_cancelar {
+    margin-top: 1em;
+    border: 3px solid #f42121;
+    border-radius: 1em;
+    padding: .2em 1em;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+}
+
+.btn_cancelar:hover {
+    background: #f42121;
+    color: white;
+}
+
+.perfil{
+    padding: 2em;
+}
+
+.perfil_info{
+    display: flex;
+    align-items: center;
+}
+
+.perfil_info div, .perfil_href{
+    display: block;
+    padding-top: 1em;
+}
+
+.perfil_href{
+    text-align: center;
+}
+
+.perfil_info img{
+    height: 15em;
+}
+
+.perfil_citas{
+    margin-top: 2em;
+}
+
+.perfil_hrefs{
+    display: flex;
+    gap: 3em;
+    margin-left: 2em;
+}
+
+.perfil_href img{
+    height: 10em;
+    margin-bottom: 1em;
+}
+
+.form_select {
+    border:1px solid #d9d9d9;
+    height:30px;
+    overflow: hidden;
+    width: 230px;
+    position:relative;
+}
+select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+}
+select:focus{ outline: none;}
+
+.form_select::after{
+    content:"\025be";
+    display:table-cell;
+    padding-top:7px;
+    text-align:center;
+    width:30px;
+    height:30px;
+    background-color:#d9d9d9;
+    position:absolute;
+    top:0;
+    right:0px;
+    pointer-events: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+tr:hover {
+    background-color: #e0e0e0;
+}
+.delete-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-button:hover {
+    background-color: #e63939;
+}
+
+
