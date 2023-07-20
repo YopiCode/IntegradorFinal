@@ -5,16 +5,20 @@ import com.medicheck.utils.Crud;
 
 import java.util.List;
 
+
 public class ConsultorioDao {
     Crud<Consultorio> consultorioCrud;
 
+    
     public ConsultorioDao() {
         consultorioCrud = new Crud<>(Consultorio.class);
+        
     }
 
     public Consultorio createConsultorio(Consultorio consultorio) {
         return consultorioCrud.create(consultorio);
     }
+    
 
     public Consultorio updateConsultorio(Consultorio consultorio) {
         return consultorioCrud.update(consultorio);
