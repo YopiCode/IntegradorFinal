@@ -80,4 +80,17 @@ public class Horario {
     public void setIdTurno(int idTurno) {
         this.idTurno = idTurno;
     }
+
+    @Override
+    public String toString() {
+        return "Horario{" +
+                "id=" + id +
+                ", horaIngreso=" + horaIngreso +
+                ", horaSalida=" + horaSalida +
+                ", dia=" + dia +
+                ", idMedico=" + idMedico +
+                ", idConsultorio=" + idConsultorio +
+                ", idTurno=" + idTurno +
+                '}';
+    }
 }

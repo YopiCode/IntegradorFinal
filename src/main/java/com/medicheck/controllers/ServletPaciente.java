@@ -31,6 +31,11 @@ public class ServletPaciente extends HttpServlet {
                         int id = Integer.parseInt(request.getParameter("id"));
                         request.setAttribute("paciente", dao.getPacienteById(id));
                     }
+                    case "perfil"->{
+                            session.removeAttribute("idMedico");
+                            session.removeAttribute("idEspecialidad");
+                            session.removeAttribute("fecha");
+                    }
                 }
                 req = request.getRequestDispatcher("/views/" + url + ".jsp");
                 req.forward(request, response);

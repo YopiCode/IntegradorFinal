@@ -1,6 +1,5 @@
 package com.medicheck.utils;
 
-import com.ctc.wstx.sw.SimpleOutputElement;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -25,7 +24,6 @@ public class Crud<T> {
 
     public T create(T obja) {
         String CREATE = "insert into {class} ({atributos}) values ({valores})";
-       
         StringBuilder sb = new StringBuilder();
         StringBuilder sb2 = new StringBuilder();
         for (Field field : tClass.getDeclaredFields()) {
@@ -128,7 +126,6 @@ public class Crud<T> {
         try (PreparedStatement ps = conexion.conectar().prepareCall(delete)) {
             ps.setObject(1, id);
             ps.executeUpdate();
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -150,6 +147,7 @@ public class Crud<T> {
                     Field field = tClass.getDeclaredField(fieldname);
                     String methodname = "set" + Character.toUpperCase(fieldname.charAt(0)) + fieldname.substring(1);
                     Method method = tClass.getMethod(methodname, field.getType());
+
                     Object valor = res.getObject(i + 1);
                     method.invoke(obj, valor);
                 }
@@ -195,7 +193,7 @@ public class Crud<T> {
                 ps.setObject(parameterIndex, valor);
                 parameterIndex++;
             }
-
+            System.out.println(ps);
             ResultSet res = ps.executeQuery();
             ResultSetMetaData metaData = res.getMetaData();
             while (res.next()) {

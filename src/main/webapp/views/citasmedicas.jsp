@@ -14,11 +14,10 @@
                 <th>Medico</th>
                 <th>Fecha</th>
                 <th>hora</th>
-                <th>Cancelar</th>
             </tr>
             </thead>
             <tbody>
-                ${citashoy}
+                ${citasHoy}
             </tbody>
         </table>
     </form>

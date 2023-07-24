@@ -134,6 +134,8 @@ header {
 }
 
 .btnReporte {
+    float: right;
+    margin-right: 1em;
     background-color: #ded8d8;
     color: #000000;
     border: none;

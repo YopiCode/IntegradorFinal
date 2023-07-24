@@ -7,23 +7,22 @@
 <body>
 <%@include file="../../components/header.jsp" %>
 <main>
-    <form action="cancelarCita" method="post">
-        <table>
-            <thead>
-            <tr>
-                <th>Medico</th>
-                <th>Fecha</th>
-                <th>hora</th>
-                <th>Cancelar</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                ${citas}
-            </tr>
-            </tbody>
-        </table>
-    </form>
+    <table>
+        <thead>
+        <tr>
+            <th>Medico</th>
+            <th>Fecha</th>
+            <th>hora</th>
+            <th>Generar</th>
+            <th>Cancelar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            ${citas}
+        </tr>
+        </tbody>
+    </table>
 </main>
 </body>
 </html>

@@ -29,22 +29,23 @@
     <hr>
     <div class="form_cita">
         <form action="/registrarCita" method="post">
-            <div class="form_campos_registro">
-                <label for="medico" class="form_label">Medico: </label>
-                <select name="idMedico" id="medico" class="form_select">
-                    ${medicos}
-                </select>
+            <div class="form_pedir_cita">
+                <h2>Especialidad</h2>
+                ${especialidades}
             </div>
-            <div class="form_campos_registro">
-                <label for="fecha" class="form_label">Fecha: </label>
-                <input name="fecha" type="date" id="fecha" class="form_select" />
+            <div class="form_pedir_cita">
+                <h2>Medico</h2>
+                ${medicos}
             </div>
-            <div class="form_campos_registro">
-                <label for="hora" class="form_label">hora: </label>
-                <input name="hora" type="time" id="hora" class="form_select" />
+            <div class="form_pedir_cita">
+                <h2>Fecha</h2>
+                ${fechas}
+            </div>
+            <div class="form_pedir_cita">
+                <h2>hora</h2>
+                ${horas}
             </div>
             <div class="botones">
-                <button type="submit" class="btn_submit">Registrar</button>
                 <a href="/paciente/perfil" class="btn_cancelar">Cancelar</a>
             </div>
         </form>

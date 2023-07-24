@@ -18,6 +18,17 @@ public class CitaMedica {
         this.idMedico = idMedico;
     }
 
+    @Override
+    public String toString() {
+        return "CitaMedica{" +
+                "id=" + id +
+                ", fecha=" + fecha +
+                ", hora=" + hora +
+                ", idPaciente=" + idPaciente +
+                ", idMedico=" + idMedico +
+                '}';
+    }
+
     public CitaMedica() {
     }
 

@@ -58,7 +58,7 @@ public class ServletMedico extends HttpServlet {
             req = request.getRequestDispatcher("views/home.jsp");
             req.forward(request, response);
         }
-        if (url.equals("/cerrarSesion")) {
+        if (url.equals("/cerrarSesionMedico")) {
             session.removeAttribute("medico");
             response.sendRedirect("/medico/login");
         }

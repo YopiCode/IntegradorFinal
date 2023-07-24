@@ -8,8 +8,8 @@
 <jsp:include page="${pageContext.request.contextPath}/components/header2.jsp" />
 <main>
     <div class="window">
-        <a class="btn_window" href="/horarios/nuevo">Nuevo +</a>
-        <a class="btn_window"  href="/horarios/lista">Lista </a>
+        <a class="btn_window" href="/horario/nuevo">Nuevo +</a>
+        <a class="btn_window"  href="/horario/lista">Lista </a>
     </div>
     <table>
         <thead>

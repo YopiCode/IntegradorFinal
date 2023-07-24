@@ -109,9 +109,43 @@ main{
 
 .form_cita form{
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
+.form_cita form h2{
 
+}
+
+.form_pedir_cita{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 2em;
+}
+
+.btn_forms{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    width: 90%;
+}
+
+.btn_forms h2{
+    font-size: 1.4em;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn_forms button{
+    background: none;
+    width: 9em;
+    padding: 1em .5em;
+    cursor: grab;
+}
 
 .form_campos_registro{
     display: flex;
@@ -138,7 +172,7 @@ main{
 
 .btn_login {
     margin-top: 1em;
-    border: 3px solid #315cfd;
+    border: 3px solid #121212;
     border-radius: 1em;
     padding: .2em 2em;
     transition: all 0.3s;
@@ -148,7 +182,7 @@ main{
 }
 
 .btn_login:hover {
-    background: #315cfd;
+    background: #121212;
     color: white;
     font-size: 1.5em;
 }
